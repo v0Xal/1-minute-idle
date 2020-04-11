@@ -1,0 +1,14 @@
+html{
+text-align:center;
+
+}
+#soulFluidMeter {
+height:200;
+width:200;
+background:#cccccc;
+}
+#soulFluid{
+height:0%;
+width:100%;
+background:#59adba;
+}
