@@ -24,7 +24,7 @@ endGame();
 var repeat = setInterval(countdown,1000);
 function update(){
   val("soulFluidCounter",game.soulFluid + "/" + game.soulFluidNeeded + " Soul Fluid")
-  document.getElementById("soulFluid").style.height = (game.soulFluid/game.soulFluidNeeded)*200;
+  document.getElementById("soulFluid").style.height = (game.soulFluid/game.soulFluidNeeded)*200+"px";
   val("souls",game.souls + " Souls");
 }
 setInterval(update,50);
