@@ -1,15 +1,19 @@
 var game = {
-  money: 0,
-  time: 0,
-  souls: 0,
-  soulFluid: 0,
-  soulFluidNeeded: 10000,
-  maxTime: 60,
-  player: {
-    atk: 0,
-    hp: 5,
-    hpMax: 10,
-  },
+  "money": 0,
+  "time": 0,
+  "souls": 0,
+  "soulFluid": 0,
+  "soulFluidNeeded": 10000,
+  "maxTime": 60,
+  "names":{
+    "area1":["Goblin","Shrikling","Orc"]
+},
+  "player": {
+    "atk": 0,
+    "hp": 5,
+    "hpMax": 10,
+    "inv":[]
+  }
 };
 function val(id, thing) {
   document.getElementById(id).innerHTML = thing;
