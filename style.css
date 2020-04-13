@@ -6,9 +6,28 @@ text-align:center;
 height:200px;
 width:200px;
 background:#cccccc;
+transform: rotate(180deg);
+border-radius: 50%; 
+border-width: 5px;
+border:grey;
+overflow: hidden;
 }
+
 #soulFluid{
 height:0%;
 width:100%;
-background:#59adba;
+background-attachment: fixed;
+background: linear-gradient(360deg, rgb(43, 155, 219) 0%, rgba(0,138,255,1) 100%);
 }
+progress[value].hpBar {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+}
+progress[value].hpBar::-webkit-progress-bar {
+    background-color: #eee;
+  }
+  progress[value].hpBar::-webkit-progress-value {
+    background: red;
+    background-attachment: fixed;
+  }

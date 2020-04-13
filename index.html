@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>1 Minute Idle - Cool</title>
-<link type="text/css" rel="stylesheet" href="style.css"/>
-	<style type="text/css">
-	</style>
-</head>
-<body>
-	<div id="startMenu">
-		<h1>1 Minute Idle</h1>
-		<div id="soulFluidMeter"><p id="soulFluidCounter">0/10000 Soul Fluid</p><div id="soulFluid></div></div>
-			<h4 id="souls">0 Souls</h4>
-	
-	
-	
+  <head>
+    <title>1 Minute Idle - Cool</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <div id="startMenu">
+	  <h1>1 Minute Idle</h1>
+	  <div id="soul">
+      <p id="soulFluidCounter">0/10000 Soul Fluid</p>
+      <center>
+        <div id="soulFluidMeter">
+          <div id="soulFluid"></div>
+        </div>
+      </center>
+	  <h4><span id="souls">0</span> Souls</h4>
 	</div>
-			<script type="text/javascript" src="game.js"></script>
-</body>
+      <div id="startButtons">
+        <button onclick="startGame();">Start</button>
+        <button>Upgrades</button>
+      </div>
+    </div>
+    <div id="game">
+      <div id="playerBox">
+        <div id="playerStats">
+          <b id="playerName">Player</b>
+          <p>Attack: <span id="playerAtk">0</span></p>
+          <p>
+            Health: <span id="playerHp">0</span>/<span id="playerHpMax">0</span>
+          </p>
+          <progress id="playerHpBar" class="hpBar" max="0" value="0"></progress>
+        </div>
+
+        <div id="playerButtons">
+          <button id="fight">Fight</button>
+        </div>
+      </div>
+      <div id="enemyBox"></div>
+    </div>
+
+    <script type="text/javascript" src="game.js"></script>
+  </body>
 </html>
