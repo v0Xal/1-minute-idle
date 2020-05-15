@@ -1,2 +1,7 @@
 # Soul RPG
-No longer a 1 minute Idle. Now a Full blown RPG
+
+A Full Blown RPG with skills
+
+### Zones
+1. Forest
+2. Desert
